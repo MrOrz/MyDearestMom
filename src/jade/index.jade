@@ -1,0 +1,14 @@
+doctype html
+html(lang="zh-tw")
+  head
+    meta(charset='UTF-8')
+    title KPPoint
+    link(href="/assets/"+hash+".css" rel="stylesheet")
+  body
+    h1 It works!
+
+    div.test
+
+    script(src="/assets/"+hash+".js")
+    if process.env.NODE_ENV!=='production'
+      script(src="/webpack-dev-server.js")
