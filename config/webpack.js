@@ -18,6 +18,8 @@ var webpackCfg = {
       {
         test: /\.styl$/,
         loader: ExtractText.extract("css?sourceMap!stylus")
+      },{
+        test: /\.(?:jpg)|(?:png)$/, loader: "file-loader"
       }
     ],
   },

@@ -1,5 +1,5 @@
 GIT=git@github.com:MrOrz/temp.git
-DEPLOY_BRANCH=master
+DEPLOY_BRANCH=gh-pages
 
 .PHONY: build push clean deploy
 
