@@ -2,12 +2,34 @@ doctype html
 html(lang="zh-tw")
   head
     meta(charset='UTF-8')
+    meta(name='viewport',content='width=device-width, initial-scale=1')
     title KPPoint
+    link(href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css')
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet')
     link(href="assets/"+hash+".css" rel="stylesheet")
-  body
-    h1 It works!
 
-    div.test
+  body
+    img.img-dachen.fixed(src="static/images/dachen.svg" data-0="transform[sqrt]: scale(18) translate(0, 0px)" data-1000="transform: scale(1) translate(0, 0px)" data-1500="transform[sqrt]: scale(1) translate(0, -500px)")
+    header.header-cover.fixed(data-2970="opacity: 1" data-2975="opacity: 0")
+      .date-age
+        .date 1954.11.27
+        .age 0 歲
+
+
+    #skrollr-body
+      section.cover
+        .scroll-hint
+          | 往下捲動<br>
+          i.fa.fa-chevron-circle-down
+
+        img.img-retreat(src="static/images/retreat.svg" data-950="opacity: 0" data-1050="opacity: 1")
+        img.img-taiwan(src="static/images/taiwan.svg" data-2500="transform: scale(0)" data-2600="transform: scale(1)")
+
+      section.young-age
+        div.title-bg
+        h2.title 年輕的日子<br>是一場<br>傳奇冒險<br>顛簸， 但是<br>精彩
+
+
 
     script(src="assets/"+hash+".js")
     if process.env.NODE_ENV!=='production'

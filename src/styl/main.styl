@@ -1,7 +1,86 @@
-@import './_test-import'
+@import 'nib'
+
+global-reset()
+reset-html5()
+
+// http://www.colourlovers.com/palette/3565794/Absent:_biolante
+warm-fg = #FF7A73
+warm-bg = #eaccb4
+grass-light = #d7e9d1
+grass = #acc3b1
+grass-dark = #526b6b
+
+fold-height = 1000px
+
 
 html, body
-  color color
+  background grass-dark
+  text-align center
+  line-height: 1.5
+
+// General style
+//
+.date-age
+  .date
+    font-family Lato, sans-serif
+    font-size: 32px
+    font-weight 900
+  .age
+    font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
+    font-size: 16px
+    font-weight 300
+
+.title
+  font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
+  font-size: 32px
+  font-weight: 300
+
+@keyframes scroll-down-indicator
+  from
+    transform translate3d(0, 0, 0)
+  to
+    transform translate3d(0, 20px, 0)
+
+.fixed
+  position fixed
+
+// 1st fold
+//
+
+.img-dachen
+  transform-origin 138px 30px
+  top: 20px
+  left: 50%
+  margin-left: -103px
+
+.header-cover
+  width 100%
+  > .date-age
+    padding-top 200px
+    color grass-light
+
+section.cover
+  // background grass-dark
+  height 4000px
+
+
+  .scroll-hint
+    text-align center
+    width 100%
+    absolute left 0 top 400px
+    color #fff
+    i
+      font-size 48px
+      animation scroll-down-indicator 0.7s ease 0s infinite alternate
+
+  .img-retreat
+    absolute left 50% top 1300px
+    margin-left: -120px
+    z-index: 1 // Higher than taiwan
+
+  .img-taiwan
+    absolute left 50% top 3020px
+    margin-left: -124px
 
 .test
   width 200px
