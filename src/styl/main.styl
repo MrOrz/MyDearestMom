@@ -33,6 +33,15 @@ html, body
   opacity: 1
   transition opacity .5s
 
+  h1
+    font-size: 32px
+    color: #fff
+    margin-top 200px
+
+
+.is-loaded .loading
+  opacity: 0
+
 // General style
 //
 .date-age
@@ -100,14 +109,16 @@ section.cover
 section.young-age
   background: warm-fg
   position relative
-  height 2500px
+  height 3500px
 
+  len = 300px
   .title-bg
+    w = len * 1.414
     background: grass-dark
-    absolute left 0 top 0
-    width: 100%
-    padding-bottom: 100%
-    margin-top: -50%
+    width: w
+    height: w
+    absolute left 50% top (w / -2)
+    margin-left: (w / -2)
     transform rotate(45deg)
 
   h2
@@ -115,7 +126,15 @@ section.young-age
     text-align center
     color warm-fg
     z-index 1
-    margin-top: -32px
+    transform translate(0, -32px)
+  
+  .img-zigzag
+    absolute left 50% top (len - 8px)
+    margin-left: -177px;
+
+section.slogan
+  background: linear-gradient(top, warm-fg, #fff)
+  height: 500px
 
 .test
   width 200px
