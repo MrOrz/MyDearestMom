@@ -1,4 +1,4 @@
-require('./require-test.js');
+var skrollr = require('../../vendor/bower_components/skrollr/dist/skrollr.min');
 require('../styl/main.styl'); // Just trigger CSS compilation & text extraction...
 
-console.log('Main JS file loaded');
+skrollr.init();

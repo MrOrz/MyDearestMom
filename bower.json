@@ -9,5 +9,6 @@
   "private": true,
   "ignore": [],
   "dependencies": {
+    "skrollr": "~0.6.29"
   }
 }
