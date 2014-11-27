@@ -73,8 +73,50 @@ html(lang="zh-tw")
           .date 2014.11.27
           .age 60 歲
 
-        h2 歲月的痕跡再也藏不住
+        h2(data-200-bottom="opacity: 0" data-bottom="opacity: 1" style="padding-bottom: 32px")
+          | 歲月的痕跡再也藏不住<br><br>
+          span(data--300-bottom="opacity: 0" data--400-bottom="opacity: 1") 但心還年輕，偶爾還是會<br>
+          span(data--300-bottom="opacity: 0" data--400-bottom="opacity: 1") 留下這樣的瀏覽記錄
 
+        div.browse-history(data-200-bottom="opacity: 0" data-50-bottom="opacity: 1")
+
+        h2(data-200-bottom="opacity: 0" data-bottom="opacity: 1" style="padding-bottom: 32px") 雖然我們有時<br>意見不一樣
+
+        div.book-scared
+          img.img-book(src="static/images/book.png" data-100-bottom="transform[bounce]: translate(100%, 0)" data--100-bottom="transform[bounce]: translate(0%, 0)")
+          img.img-scared(src="static/images/scared.png" data--150-bottom="transform[outCubic]: scale(0)" data--250-bottom="transform[outCubic]: scale(1)")
+          //p(data--150-bottom="opacity:0" data--200-bottom="opacity:1") 註：當期商//業周刊立場 = 挺服貿
+
+          <!-- 柯Ｐ圖來源：柯Ｐ滑出來對你說政見 by kxapp http://goooooooogle.github.io/kp/ -->
+          <!-- 連勝文爆橘圖來源：勝文滑出來對你說政見 by QCL. http://qcl.github.io/lien/ -->
+        div.candidates
+          figure.kp(data-bottom="transform[outCubic]: translate(-100%, 0)" data--150-bottom="transform[outCubic]: translate(0%, 0)")
+            img.img-kp(src="static/images/kp.png")
+            figcaption
+              a(href="http://kptaipei.tw/")
+                | 你好，我是柯文哲。
+                span.placeholder
+                  | 無黨籍我今（10/28）日推出第27支柯P新政田園城市，由台灣第一位獲得美國認證的「園藝治療師」黃盛璘及社區大學全國促進會秘書長楊志彬陪同出席記者會。我認為，希望台北市變成一個可以種田、種菜的城市。...
+
+          figure.lien(data-bottom="transform[outCubic]: translate(100%, 0)" data--150-bottom="transform[outCubic]: translate(0%, 0)")
+            img.img-lien(src="static/images/lien.png")
+            figcaption
+              a(href="http://taipeihope.tw/issue/issue-list/official-policy.html")
+                | 你好，我是連勝文。
+                span.placeholder
+                  | 我提出「適性發展，讓孩子做最好的自己」
+                  | 雖然十二年國教的爭議現在已經逐漸平息，但事實上，政府教育的改革現在才正要開始面臨挑戰。根據兒福聯盟公佈的數據表示，目前有...
+
+        h2(data-200-bottom="opacity: 0" data-bottom="opacity: 1" style="padding-top: 0") 但我們還是同屬一家！
+
+
+        h2(data-200-bottom="opacity: 0" data-bottom="opacity: 1") 一直以來<br><small>（尤其是最近）</small><br>辛苦了
+
+        h2(data-200-bottom="opacity: 0" data-bottom="opacity: 1")
+          | 媽媽，生日快樂<br>
+          i.cake.fa.fa-birthday-cake
+
+        footer 愛你的兒子 敬上
 
     script(src="assets/"+hash+".js")
     if process.env.NODE_ENV!=='production'
