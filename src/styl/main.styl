@@ -83,6 +83,10 @@ html, body
     padding-top 200px
     color grass-light
 
+  > p
+    color rgba(#fff, .87)
+    margin-top: 1em;
+
 section.cover
   // background grass-dark
   height 4000px
@@ -121,16 +125,68 @@ section.young-age
     margin-left: (w / -2)
     transform rotate(45deg)
 
-  h2
+  h2.first
     position relative
     text-align center
-    color warm-fg
     z-index 1
+    color warm-fg
     transform translate(0, -32px)
-  
+
+  h2.final
+    color grass-dark
+    absolute left 50% top 3200px
+    margin-left 20px
+    text-align left
+
   .img-zigzag
     absolute left 50% top (len - 8px)
-    margin-left: -177px;
+    margin-left: -177px
+
+  .img-20
+    absolute left 50% top (len + 367px)
+    margin-left: -90px
+    transform rotate(45deg)
+
+  .img-singapore
+    absolute left 50% top (len + 808px)
+    margin-left: -126px
+    transform rotate(-45deg)
+
+  .img-hk
+    absolute left 50% top (len + 1246px)
+    margin-left: -271px
+    transform rotate(45deg)
+
+  .img-bangkok
+    absolute left 50% top (len + 1781px)
+    margin-left: -120px
+    transform rotate(-45deg)
+
+  .date-age, .note
+    absolute left 50% top len
+    whitespace no-wrap
+
+    &.ccw45
+      transform rotate(-45deg)
+
+    &.cw45
+      transform rotate(45deg)
+
+  .date-age
+    color grass-light
+
+  .note
+    color rgba(#fff, .87)
+    font-weight bold
+
+  .dot
+    size = 20px
+    width: size
+    height: size
+    background grass-dark
+    absolute left 50% top (len + 3135px)
+    margin-left: (size / -2 - 1px)
+    border-radius: size
 
 section.slogan
   background: linear-gradient(top, warm-fg, #fff)

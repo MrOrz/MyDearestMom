@@ -5,7 +5,7 @@ html(lang="zh-tw")
     meta(name='viewport',content='width=device-width, initial-scale=1')
     title KPPoint
     link(href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css')
-    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet')
+    link(href='vendor/css/font-awesome.min.css' rel='stylesheet')
     link(href="assets/"+hash+".css" rel="stylesheet")
 
   body
@@ -20,9 +20,7 @@ html(lang="zh-tw")
         .date 1954.11.27
         .age 0 歲
 
-      p 姨媽們說，我們家撤離大陳島時，我媽才幾個月大。<br>我媽差點就被留在大陳島上了。
-
-
+      p(data-850="opacity: 0" data-1000="opacity: 1" data-2400="opacity: 1" data-2700="opacity: 0") 記得姨媽們說，我們家撤離大陳島時，<br>我媽才幾個月大。<br>我媽差點就被留在大陳島上了。
 
     #skrollr-body
       section.cover
@@ -35,9 +33,36 @@ html(lang="zh-tw")
 
       section.young-age
         div.title-bg
-        h2.title 年輕的日子<br>是一場<br>傳奇冒險<br>顛簸， 但是<br>精彩
+        h2.first.title 年輕的日子<br>是一場<br>傳奇冒險<br>顛簸， 但是<br>精彩
 
         img.img-zigzag(src="static/images/zigzag.svg")
+
+        .date-age.ccw45(style="text-align: right; margin-left: -80px; top: 590px")
+          .date 1974
+          .age 20 歲
+        .note.cw45(style="margin-left: -194px; top: 883px") 雙馬尾。
+        img.img-20(src="static/images/20.png" data-bottom="transform[outCubic]:scale(0) rotate(45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(45deg)")
+
+        .note.ccw45(style="margin-left: -196px; top: 1163px") 去過新加坡玩。
+        img.img-singapore(src="static/images/singapore.png" data-bottom="transform[outCubic]:scale(0) rotate(-45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(-45deg)")
+
+        .note.cw45(style="margin-left: 119px; top: 1676px; text-align: right") 還有香港。
+        img.img-hk(src="static/images/hongkong.png" data-bottom="transform[outCubic]:scale(0) rotate(45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(45deg)")
+
+        .note.ccw45(style="margin-left: -190px; top: 2155px") 以及泰國。
+        img.img-bangkok(src="static/images/bangkok.png" data-bottom="transform[outCubic]:scale(0) rotate(-45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(-45deg)")
+
+        .note.cw45(style="margin-left: -74px; top: 2520px;" data-bottom="opacity: 0" data--75-bottom="opacity: 1") 一直玩一直玩一直玩
+
+        h2.final.title(data-bottom="opacity: 0; transform: translate(0, 0px)" data-100-top="opacity: 1; transform: translate(0, -100px);") 最後，<br>穩定下來
+
+        .dot
+
+        .date-age(style="margin-left: -2.4em; top: 3470px; text-align: center;" data-bottom="transform[outCubic]:scale(0)" data--150-bottom="transform[outCubic]:scale(1)")
+          .date 1990
+          .age 36 歲
+
+        .note(style="margin-left: -2.1em; top: 3550px; text-align: center" data-bottom="transform[outCubic]:scale(0)" data--150-bottom="transform[outCubic]:scale(1)") 翔勝出生
 
       section.slogan
 
