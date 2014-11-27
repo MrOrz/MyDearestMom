@@ -16,11 +16,11 @@ html(lang="zh-tw")
 
     img.img-dachen.fixed(src="static/images/dachen.svg" data-0="transform[sqrt]: scale(18) translate(0, 0px)" data-1000="transform: scale(1) translate(0, 0px)" data-1500="transform[sqrt]: scale(1) translate(0, -500px)")
     header.header-cover.fixed(data-2970="opacity: 1" data-2975="opacity: 0")
-      .date-age
+      .date-age#birth(data-emit-events data-0="0" data-1000="2")
         .date 1954.11.27
         .age 0 歲
 
-      p(data-850="opacity: 0" data-1000="opacity: 1" data-2400="opacity: 1" data-2700="opacity: 0") 記得姨媽們說，我們家撤離大陳島時，<br>我媽才幾個月大。<br>我媽差點就被留在大陳島上了。
+      p(data-850="opacity: 0" data-1000="opacity: 1" data-2400="opacity: 1" data-2700="opacity: 0") 記得姨媽們說，我們家撤離大陳島時，<br>我媽才幾個月大。<br><br>因為太年幼，物資又匱乏<br>我媽差點就被留在大陳島上。
 
     #skrollr-body
       section.cover
@@ -33,7 +33,7 @@ html(lang="zh-tw")
 
       section.young-age
         div.title-bg
-        h2.first.title 年輕的日子<br>是一場<br>傳奇冒險<br>顛簸， 但是<br>精彩
+        h2.first.title 媽媽的年輕日子<br>是一場<br>傳奇冒險<br>曲折， 但是<br>精彩
 
         img.img-zigzag(src="static/images/zigzag.svg")
 
@@ -44,17 +44,17 @@ html(lang="zh-tw")
         img.img-20(src="static/images/20.png" data-bottom="transform[outCubic]:scale(0) rotate(45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(45deg)")
 
         .note.ccw45(style="margin-left: -196px; top: 1163px") 去過新加坡玩。
-        img.img-singapore(src="static/images/singapore.png" data-bottom="transform[outCubic]:scale(0) rotate(-45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(-45deg)")
+        img.img-singapore(src="static/images/singapore.png")
 
         .note.cw45(style="margin-left: 119px; top: 1676px; text-align: right") 還有香港。
-        img.img-hk(src="static/images/hongkong.png" data-bottom="transform[outCubic]:scale(0) rotate(45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(45deg)")
+        img.img-hk(src="static/images/hongkong.png")
 
         .note.ccw45(style="margin-left: -190px; top: 2155px") 以及泰國。
-        img.img-bangkok(src="static/images/bangkok.png" data-bottom="transform[outCubic]:scale(0) rotate(-45deg)" data--75-bottom="transform[outCubic]:scale(1) rotate(-45deg)")
+        img.img-bangkok(src="static/images/bangkok.png")
 
         .note.cw45(style="margin-left: -74px; top: 2520px;" data-bottom="opacity: 0" data--75-bottom="opacity: 1") 一直玩一直玩一直玩
 
-        h2.final.title(data-bottom="opacity: 0; transform: translate(0, 0px)" data-100-top="opacity: 1; transform: translate(0, -100px);") 最後，<br>穩定下來
+        h2.final.title(data-bottom="opacity: 0; transform: translate(0, 0px)" data-100-top="opacity: 1; transform: translate(0, -100px);") 最後，<br>安定下來
 
         .dot
 
@@ -64,7 +64,17 @@ html(lang="zh-tw")
 
         .note(style="margin-left: -2.1em; top: 3550px; text-align: center" data-bottom="transform[outCubic]:scale(0)" data--150-bottom="transform[outCubic]:scale(1)") 翔勝出生
 
+      section.transform
+        h2 轉眼間
+
       section.slogan
+
+        .date-age(data-bottom="transform: rotateY(90deg)" data--150-bottom="transform: rotateY(0deg)")
+          .date 2014.11.27
+          .age 60 歲
+
+        h2 歲月的痕跡再也藏不住
+
 
     script(src="assets/"+hash+".js")
     if process.env.NODE_ENV!=='production'

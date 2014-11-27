@@ -12,11 +12,11 @@ grass-dark = #526b6b
 
 fold-height = 1000px
 
-
 html, body
   background grass-dark
   text-align center
   line-height: 1.5
+  font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
 
 .loading
   fixed left 0 top 0
@@ -25,7 +25,6 @@ html, body
   z-index: 100
 
   background: warm-fg
-  font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
   font-weight: 900
   text-align: center
   color warm-bg
@@ -50,12 +49,10 @@ html, body
     font-size: 32px
     font-weight 900
   .age
-    font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
     font-size: 16px
     font-weight 300
 
 .title
-  font-family 'Hiragino Kaku Gothic Pro', 'Droid Sans', 'Roboto', sans-serif
   font-size: 32px
   font-weight: 300
 
@@ -188,9 +185,28 @@ section.young-age
     margin-left: (size / -2 - 1px)
     border-radius: size
 
-section.slogan
+section.transform
   background: linear-gradient(top, warm-fg, #fff)
-  height: 500px
+  height: 1200px
+
+  h2
+    padding-top 700px
+    color grass-dark
+    font-size 36px
+
+section.slogan
+  background: #fff
+
+  .date-age
+    text-align center
+    padding-top: 200px
+    color warm-fg
+
+  h2
+    padding: 400px 0
+    font-size: 24px
+    color warm-fg
+
 
 .test
   width 200px
